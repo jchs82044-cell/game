@@ -1,0 +1,123 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Malgun Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    width: 600px;
+    background-color: #2c2c2c;
+    border: 3px solid #ffcc00;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ffcc00;
+    margin-top: 0;
+}
+
+.battle-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+    background: linear-gradient(to bottom, #3a3a3a, #222);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.fighter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.enemy-side {
+    justify-content: flex-end;
+}
+
+.player-side {
+    justify-content: flex-start;
+}
+
+.sprite {
+    font-size: 48px;
+}
+
+.status-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 200px;
+}
+
+.hp-bar-container {
+    width: 100%;
+    background-color: #555;
+    height: 12px;
+    border-radius: 6px;
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.hp-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 100%;
+    transition: width 0.3s ease;
+}
+
+.log-box {
+    background-color: #111;
+    border: 1px solid #444;
+    padding: 10px;
+    height: 60px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.skill-btn {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.skill-btn:hover {
+    background-color: #e6b800;
+}
+
+.reset-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+    grid-column: span 2;
+}
+
+.reset-btn:hover {
+    background-color: #cc0000;
+}
